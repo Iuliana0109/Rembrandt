@@ -1,0 +1,70 @@
+/* Navbar styles */
+
+.navbar {
+    /* width: 100%; */
+    position: fixed;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    align-self: stretch;
+    padding: 24px 40px;
+    flex: 0 0 auto;
+    z-index: 1000; /* Ensure navbar stays on top of other content */
+    transition: background-color 0.3s ease; /* Smooth transition for background color change */
+  }
+  
+  .navbar.dark {
+    background-color: #130D0A; /* Dark background color */
+  }
+  
+  .logo {
+    width: 40px;
+    height: 48px;
+    flex-shrink: 0;
+  }
+  
+  .nav-links {
+    display: flex;
+    align-items: flex-start;
+    gap: 20px;
+    list-style: none;
+  }
+  
+  .nav-links li {
+    margin-right: 40px;
+  }
+  
+  .nav-links li a {
+    display: flex;
+    height: 50px;
+    padding: 8px;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    text-decoration: none;
+    color: #DED5BF; /* Default link color */
+    transition: color 0.3s ease; /* Smooth transition for link color change */
+    color: #DED5BF;
+    text-align: center;
+    font-family: Montserrat;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 140%; /* 28px */
+  }
+  
+  .nav-links li a:hover {
+    background-color: #DED5BF; /* Change link color on hover */
+    color: #130D0A;
+  }
+  
+  /* Hero section styles */
+  .hero {
+    height: 100vh; 
+    background-image: url('images/hero image.jpg'); 
+    background-size: cover;
+    background-position: center;
+  }
+  
+  /* Example additional styling for the rest of your content */
+  
