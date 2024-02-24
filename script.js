@@ -12,3 +12,23 @@ window.addEventListener('scroll', function() {
     navbar.style.backgroundColor = 'transparent'; // Change to desired background color when inside the hero section
   }
 });
+
+document.addEventListener("DOMContentLoaded", function() {
+  var navLinks = document.querySelectorAll('nav a');
+
+  navLinks.forEach(function(navLink) {
+    navLink.addEventListener('click', function(e) {
+      e.preventDefault();
+
+      var targetId = this.getAttribute('href').substring(1);
+      var targetSection = document.getElementById(targetId);
+
+      if (targetSection) {
+        window.scrollTo({
+          top: targetSection.offsetTop,
+          behavior: 'smooth'
+        });
+      }
+    });
+  });
+});

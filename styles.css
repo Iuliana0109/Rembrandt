@@ -8,6 +8,7 @@ body{
 
 /* NAVBAR SECTION */
 .wrapper {
+  z-index: 1000;
   position: fixed;
   width: 100%;
 }
@@ -19,7 +20,6 @@ body{
   justify-content: space-between;
   background-color: transparent;
   transition: background-color 0.3s ease; /* Smooth transition for background color change */
-  z-index: 1000; 
 }
 
 .logo{
