@@ -142,12 +142,77 @@ h3 {
   color: #130D0A; 
 }
 
+
+/* ABOUT SECTION */
 .about{
   display: flex;
-  height: 1163px;
-  padding: 88px 80px;
+  position: relative;
+  padding: 88px 128px;
   flex-direction: column;
   justify-content: space-between;
   align-items: flex-start;
   background: #130D0A;
+}
+
+.title_and_part1{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 8px;
+  flex-shrink: 0;
+  align-self: stretch;
+}
+
+.info_part{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  align-self: stretch;
+}
+
+h4 {
+  color: #DED5BF;
+  font-family: Montserrat;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 140%; /* 28px */
+}
+
+.h4_left {
+  display: flex;
+  padding-right: 160px;
+  flex-direction: column;
+  justify-content: flex-end;
+  color: #DED5BF;
+  z-index: 1;
+}
+
+h2 {
+  color: #DED5BF;
+  margin: 0;
+  font-family: Cormorant;
+  font-size: 64px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 100%; /* 64px */
+}
+
+.h4_right {
+  text-align: right;
+  display: flex;
+  padding-left: 160px;
+  flex-direction: column;
+  justify-content: center;
+  z-index: 1;
+}
+
+.about .rembrandt_cutout {
+  position: absolute;
+  left: 120px;
+  bottom: 0px;
+  display: flex;
+  align-items: flex-end;
+  /* top: 745px;
+  left: 72px; */
 }
