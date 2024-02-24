@@ -3,6 +3,7 @@
 
 body{
   margin: 0;
+  font-family: Montserrat;
 }
 
 /* NAVBAR SECTION */
@@ -49,7 +50,6 @@ nav li a {
   text-align: center;
   padding: 20px;
   /* H4 */
-  font-family: Montserrat;
   font-size: 20px;
   font-style: normal;
   font-weight: 500;
@@ -64,18 +64,80 @@ nav li a {
 
 /* HERO SECTION */
 .hero {
-  height: 100vh; 
-  background-image: url('images/hero image.jpg'); 
+  height: 90vh; 
+  background-image: url('images/hero image.jpg');
   background-size: cover;
   background-position: center;
   display: flex;
-  /* width: 1280px;
-  height: 840px; */
+  width: 100%;
   padding-bottom: 48px;
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
 }
+.hero_text {
+  justify-content: flex-end;
+  display: inline-flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+  flex-grow: 1;
+}
 
+h3 {
+  margin: 0;
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 120%; /* 43.2px */
+}
 
-  
+.header_h3 {
+  color: #DED5BF;
+  text-align: center;
+}
+
+.h1_part1 {
+  margin: 0;
+  color: #DED5BF;
+  text-align: center;
+  font-family: Cormorant;
+  font-size: 168px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 100%; /* 168px */
+}
+
+.h1_part2 {
+  margin: 0;
+  color: #DED5BF;
+  text-align: center;
+  font-family: Cormorant;
+  font-size: 104px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 100%;
+}
+
+.hero_button{
+  display: flex;
+  padding: 16px 32px;
+  align-items: center;
+  gap: 32px;
+  border-radius: 8px;
+  border: 2px solid #DFB755;
+  color: #DFB755;
+  background-color: transparent;
+  text-align: center;
+  /* H4 */
+  font-family: Montserrat;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 140%; /* 28px */
+}
+
+.hero_button:hover{
+  background-color: #DFB755; /* Change link color on hover */
+  color: #130D0A; 
+}
