@@ -396,7 +396,7 @@ p {
 .regular_ticket {
   width: 340px;
   height: 396px;
-  padding: 46px 40px;
+  padding: 46px 40px 40px 40px;
   flex-direction: column;
   border-radius: 16px;
   background: #DED5BF;
@@ -406,19 +406,11 @@ p {
 .guided_ticket {
   width: 340px;
   height: 396px;
-  padding: 46px 40px;
+  padding: 46px 40px 40px 40px;
   flex-direction: column;
   border-radius: 16px;
   background: #130D0A;
-}
-
-.discounts {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  align-items: flex-start;
-  flex-shrink: 0;
-  align-self: stretch;
+  border: 3px solid #130D0A;
 }
 
 .ticket_button1 {
@@ -433,6 +425,11 @@ p {
   font-size: 20px;
   font-weight: 500;
   line-height: 140%; /* 28px */
+}
+
+.div_button {
+  display: flex;
+  justify-content: center;
 }
 
 .ticket_button1:hover{
