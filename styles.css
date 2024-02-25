@@ -260,8 +260,8 @@ h2 {
 
 /* Adjustments for each card */
 .card:nth-child(1) { left: 0%; }
-.card:nth-child(2) { left: 200%; }
-.card:nth-child(3) { left: 300%; }
+.card:nth-child(2) { left: 100%; }
+.card:nth-child(3) { left: 200%; }
 
 .work_text {
   display: flex;
