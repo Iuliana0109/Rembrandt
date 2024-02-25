@@ -259,9 +259,9 @@ h2 {
 }
 
 /* Adjustments for each card */
-.card:nth-child(1) { left: 0; }
-.card:nth-child(2) { left: 100%; }
-.card:nth-child(3) { left: 200%; }
+.card:nth-child(1) { left: 0%; }
+.card:nth-child(2) { left: 200%; }
+.card:nth-child(3) { left: 300%; }
 
 .work_text {
   display: flex;
@@ -280,11 +280,11 @@ h2 {
   width: 12px;
   height: 12px;
   border-radius: 50%;
-  background-color: #ffffff;
+  background-color: #262220;
 }
 
 .dot.active {
-  background-color: #FF0000;
+  background-color: #DED5BF;
 }
 
 /* STATISTICS SECTION */
