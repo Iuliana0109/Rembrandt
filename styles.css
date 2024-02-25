@@ -344,7 +344,7 @@ p {
   display: flex;
   width: 100%;
   align-items: center;
-  justify-content: center;
+  justify-content: flex-start;
   gap: 80px;
   flex-shrink: 0;
 }
@@ -369,7 +369,7 @@ p {
 }
 
 /* CHOOSE YOUR TICKET SECTION */
-.tickets h2 {
+.tickets .h2 {
   align-self: stretch;
   color: #130D0A;
   text-align: center;
@@ -384,10 +384,36 @@ p {
   background: #DED5BF;
 }
 
-.ticket_contents {
+.tickets_content {
   display: flex;
-  height: 700px;
-  padding: 0px 128px;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 40px;
+  width: 100%;
+  margin-top: 48px;
+}
+
+.regular_ticket {
+  width: 340px;
+  height: 396px;
+  padding: 46px 40px;
+  flex-direction: column;
+  border-radius: 16px;
+  background: #DED5BF;
+  border: 3px solid #130D0A;
+}
+
+.guided_ticket {
+  width: 340px;
+  height: 396px;
+  padding: 46px 40px;
+  flex-direction: column;
+  border-radius: 16px;
+  background: #130D0A;
+}
+
+.discounts {
+  display: flex;
   flex-direction: column;
   justify-content: space-between;
   align-items: flex-start;
@@ -395,10 +421,76 @@ p {
   align-self: stretch;
 }
 
-.ticket {
-
+.ticket_button1 {
+  border-radius: 8px;
+  border: 2px solid #130D0A;
+  padding: 16px 32px;
+  color: #130D0A;
+  text-align: center;
+  background-color: transparent;
+  /* H4 */
+  font-family: Montserrat;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 140%; /* 28px */
 }
 
-.discounts {
+.ticket_button1:hover{
+  background-color: #130D0A; /* Change link color on hover */
+  color: #DED5BF; 
+}
 
+.ticket_button2 {
+  border-radius: 8px;
+  border: 2px solid #DED5BF;
+  padding: 16px 32px;
+  color: #DED5BF;
+  text-align: center;
+  background-color: transparent;
+  /* H4 */
+  font-family: Montserrat;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 140%; /* 28px */
+}
+
+.ticket_button2:hover{
+  background-color: #DED5BF; /* Change link color on hover */
+  color: #130D0A; 
+}
+
+.guided_ticket .ticket_header {
+  display: flex;
+  align-items: center;
+  gap: 86px;
+  color: #DED5BF;
+}
+
+.regular_ticket .ticket_header {
+  display: flex;
+  align-items: center;
+  gap: 86px;
+  color: #130D0A;
+}
+
+.regular_ticket .ticket_header h2 {
+  color: #130D0A;
+}
+
+.regular_ticket h4 {
+  color: #130D0A;
+}
+
+.regular_ticket ul li, .guided_ticket ul li {
+  color: #DED5BF;
+  /* H4 */
+  font-family: Montserrat;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 140%;
+}
+
+.regular_ticket ul li {
+  color: #130D0A;
 }
