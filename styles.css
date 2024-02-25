@@ -491,3 +491,70 @@ p {
 .regular_ticket ul li {
   color: #130D0A;
 }
+
+/* FOOTER SECTION */
+footer {
+  display: flex;
+  padding: 88px 72px;
+  flex-direction: column;
+  align-items: center;
+  background: #000;
+}
+
+.footer{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer_1 {
+  width: 33%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 18px; 
+}
+
+.footer_header {
+  font-family: Montserrat;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 140%;
+  text-align: left;
+}
+
+.info_text {
+  font-family: Montserrat;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 200%;
+  text-align: left;
+}
+
+.footer a {
+  color: #DED5BF;
+  text-decoration: none;
+}
+
+footer hr {
+  width: 80%;
+  transform: rotate(90deg);
+  background-color: #DED5BF;
+}
+
+.footer_2 {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 34px;
+}
+
+.social_media {
+  display: flex;
+  align-items: flex-start;
+  gap: 32px;
+}
