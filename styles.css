@@ -286,3 +286,45 @@ h2 {
 .dot.active {
   background-color: #FF0000;
 }
+
+/* STATISTICS SECTION */
+.statistics {
+  display: flex;
+  padding: 88px 128px 104px 128px;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  background: #130D0A;
+}
+
+.numbers {
+  display: flex;
+  align-items: flex-start;
+  gap: 180px;
+}
+
+.numbers_headline {
+  color: #DED5BF;
+  text-align: center;
+  font-family: Cormorant;
+  font-size: 100px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 100%; 
+}
+
+.stats {
+  width: 250px;
+}
+
+p {
+  color: #DED5BF;
+  text-align: center;
+  /* H3 */
+  font-family: Montserrat;
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 120%;
+  margin-top: 20px;
+}

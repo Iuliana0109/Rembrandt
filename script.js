@@ -1,3 +1,4 @@
+// NAVBAR STUFF
 window.addEventListener('scroll', function() {
   var navbar = document.querySelector('.navbar');
   var hero = document.querySelector('.hero');
@@ -33,6 +34,8 @@ document.addEventListener("DOMContentLoaded", function() {
   });
 });
 
+
+// CAROUSEL
 const track = document.querySelector('.carousel');
 const items = document.querySelectorAll('.card');
 const dots = document.querySelectorAll('.dot');
