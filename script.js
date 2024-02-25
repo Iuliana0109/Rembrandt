@@ -87,3 +87,5 @@ function prevSlide() {
 }
 
 setInterval(nextSlide, 3000); // Auto-scroll every 3 seconds
+
+

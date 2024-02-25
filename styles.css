@@ -290,7 +290,7 @@ h2 {
 /* STATISTICS SECTION */
 .statistics {
   display: flex;
-  padding: 88px 128px 104px 128px;
+  padding: 88px 128px 44px 128px;
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
@@ -327,4 +327,78 @@ p {
   font-weight: 400;
   line-height: 120%;
   margin-top: 20px;
+}
+
+/* VISITOR INFORMATION SECTION */
+.visitor_info {
+  display: flex;
+  padding: 88px 128px;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  align-self: stretch;
+  background: #130D0A;
+}
+
+.info {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  gap: 80px;
+  flex-shrink: 0;
+}
+.vi_details {
+  text-align: left;
+  margin: 56px 0;
+}
+.vi_dhl {
+  color: #DED5BF;
+  font-family: Montserrat;
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 120%;
+  text-align: left;
+  margin: 36px 0;
+}
+
+.map {
+  border-radius: 16px;
+  width: 100%;
+}
+
+/* CHOOSE YOUR TICKET SECTION */
+.tickets h2 {
+  align-self: stretch;
+  color: #130D0A;
+  text-align: center;
+}
+
+.tickets {
+  display: flex;
+  padding: 88px 128px;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  background: #DED5BF;
+}
+
+.ticket_contents {
+  display: flex;
+  height: 700px;
+  padding: 0px 128px;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-shrink: 0;
+  align-self: stretch;
+}
+
+.ticket {
+
+}
+
+.discounts {
+
 }
