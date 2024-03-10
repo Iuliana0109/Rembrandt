@@ -749,4 +749,84 @@ footer hr {
     align-items: center;
     left: 0px;
   }
+
+/* FEATURED WORKS SECTION */
+.featured {
+  display: flex;
+  padding: 48px 24px;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  background: #130D0A;
+  position: relative;
+  overflow: hidden;
+  overflow-y: hidden;
+}
+
+.featured_title {
+  color: #DED5BF;
+  font-family: Montserrat;
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 100%; /* 36px */
+}
+
+.carousel {
+  display: inline-flex;
+  padding: 24px;
+  align-items: flex-start;
+  gap: 32px;
+}
+
+.card {
+  display: inline-flex;
+  flex-direction: column;
+  align-items: center;
+  height: 752px;
+  width: 248px;
+  border-radius: 16px;
+  border: 1px solid #332824;
+  background: linear-gradient(153deg, rgba(255, 255, 255, 0.20) 0%, rgba(255, 255, 255, 0.00) 100%);
+  backdrop-filter: blur(21px);
+  gap: 12px;
+  padding: 24px 16px;
+}
+
+/* Adjustments for each card */
+.card:nth-child(1) { left: 0%; }
+.card:nth-child(2) { left: 100%; }
+.card:nth-child(3) { left: 200%; }
+
+.work_text {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 12px;
+}
+
+.fw_img {
+  width: 238px;
+  height: 156.88px;
+}
+
+.dots {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+}
+
+.dot {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background-color: #262220;
+}
+
+.dot.active {
+  background-color: #DED5BF;
+}
+
+
 } 
