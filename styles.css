@@ -571,6 +571,10 @@ footer hr {
   gap: 32px;
 }
 
+.download_app {
+  display: none;
+}
+
 
 @media (max-width: 767px) {
   /* NAVBAR */
@@ -938,7 +942,7 @@ p {
 .tickets_content {
   display: flex;
   justify-content: center;
-  align-items: flex-start;
+  align-items: center;
   gap: 40px;
   width: 100%;
   margin-top: 48px;
@@ -946,7 +950,7 @@ p {
 }
 
 .regular_ticket {
-  width: 301px;
+  width: 250px;
   height: 350px;
   padding: 46px 40px 40px 40px;
   flex-direction: column;
@@ -956,7 +960,7 @@ p {
 }
 
 .guided_ticket {
-  width: 301px;
+  width: 250px;
   height: 350px;
   padding: 46px 40px 40px 40px;
   flex-direction: column;
@@ -1042,6 +1046,32 @@ p {
 
 .regular_ticket ul li {
   color: #130D0A;
+}
+
+/* DOWNLOAD APP SECTION */
+.download_app {
+  display: flex;
+  padding: 48px 24px 0px 24px;
+  flex-direction: column;
+  align-items: flex-start; 
+  background: #DED5BF;
+}
+
+.download_app h2, .download_app h4 {
+  color: #130D0A;
+}
+
+.download_buttons {
+  display: flex;
+  gap: 16px;
+  margin-bottom: 32px;
+}
+
+.mascot_and_phone {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  gap: 24px;
 }
 
 /* FOOTER SECTION */
