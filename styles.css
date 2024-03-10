@@ -338,6 +338,10 @@ p {
 }
 
 /* VISITOR INFORMATION SECTION */
+
+.info_mobile {
+  display:none;
+}
 .visitor_info {
   display: flex;
   padding: 88px 128px;
@@ -871,4 +875,48 @@ p {
   line-height: 120%;
   margin-top: 20px;
 }
+
+/* VISITOR INFORMATION SECTION */
+.visitor_info {
+  display: flex;
+  padding: 48px 24px;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  align-self: stretch;
+  background: #130D0A;
+  gap: 32px;
+}
+
+.info {
+  display:none;
+}
+
+.info_mobile {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.vi_details {
+  text-align: left;
+  margin: 0;
+  font-size: 28px;
+}
+.vi_dhl {
+  color: #DED5BF;
+  font-family: Montserrat;
+  font-size: 28px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 120%;
+  text-align: left;
+  margin: 0;
+}
+
+.map {
+  border-radius: 16px;
+  width: 100%;
+}
+
 } 
