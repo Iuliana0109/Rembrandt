@@ -578,10 +578,13 @@ footer hr {
 
 @media (max-width: 767px) {
   /* NAVBAR */
+  .wrapper {
+    padding: 0 50px;
+  }
   .navbar {
     flex-direction: column; 
-    align-items: flex-start; 
     padding: 10px;
+    width: calc(100% - 20px);
   }
 
   .menu-icon {
@@ -595,8 +598,9 @@ footer hr {
 
   .mobile_menu {
     display: flex;
+    width: 100%;
     flex-direction: row;
-    align-items: flex-start; 
+    align-items: center; 
     justify-content: space-between;
   }
 
