@@ -6,6 +6,7 @@
     <title>Rembrandt Exhibition</title>
 <!--     <link rel="stylesheet" href="reset.css" /> -->
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
 </head>
 
 <body>
@@ -13,8 +14,13 @@
 <header class="hero" id="hero">
   <div class="wrapper">
     <nav class="navbar">
+      <div class="mobile_menu">
       <div class="logo">
           <a href="#hero"><img src="images/logo.png" alt="logo"></a>
+      </div>
+      <div class="menu-icon">
+        <img src="images/hamburger_menu.svg" alt="hamburger_menu">
+      </div>
       </div>
       <ul class="nav-links">
         <li><a href="#about">About Rembrandt</a></li>
@@ -30,7 +36,7 @@
     <h1 class="h1_part1">Rembrandt:</h1>
     <h1 class="h1_part2">Master of Light and Shadow</h1>
     <h3 class="header_h3">Experience the Genius of Rembrandt at an exclusive exhibition</h3>
-    <button class="hero_button">Buy Tickets</button>
+    <a href="#tickets"><button class="hero_button">Buy Tickets</button></a>
   </div>
 </header>
 
@@ -49,6 +55,7 @@
   </div>
 
   <div class="info_part">
+    <div class="right">
     <img src="images/rembrandt2.png" alt="rembrandt2">
     <h4 class="h4_right">
       Rembrandt's artistry is characterized by his ability to capture the human 
@@ -56,6 +63,7 @@
       portraits to grand historical scenes, each of his works tells a story, inviting 
       viewers to immerse themselves in the narrative.
     </h4>
+    </div>
   </div>
 
   <div class="info_part">
@@ -70,7 +78,7 @@
   </div>
 
   <div class="info_part">
-    <h4 class="h4_right" style="margin-left: 308px;">
+    <h4 class="h4_right">
       Join us on a journey through the life and work of Rembrandt van 
       Rijn. Explore his masterpieces, uncover the stories behind the 
       paintings, and immerse yourself in the world of this legendary artist.
@@ -92,7 +100,7 @@
           physician, conducted a public dissection.
         </h4>
       </div>
-      <img src="images/fw1.png" alt="fw1">
+      <img src="images/fw1.png" class="fw_img" alt="fw1">
     </div>
 
     <div class="card">
@@ -105,7 +113,7 @@
           intricate details that make this painting a true masterpiece. 
         </h4>
       </div>
-      <img src="images/fw2.png" alt="fw2">
+      <img src="images/fw2.png" class="fw_img" alt="fw2">
     </div>
 
     <div class="card">
@@ -118,7 +126,7 @@
           sensitivity and affection.
         </h4>
       </div>
-      <img src="images/fw3.png" alt="fw3">
+      <img src="images/fw3.png" class="fw_img" alt="fw3">
     </div>
   </div>
 
@@ -148,6 +156,8 @@
       <hr>
       <p>years of planning</p>
     </div>
+
+    <img src="images/mascot standing.png" alt="mascot standing">
   </div>
 </section>
 
@@ -164,6 +174,16 @@
       09:00 - 18:00, every day <br>
       Moldova Art Museum, 31 August 1989 St 115
     </p>
+  </div>
+  <div class="info_mobile">
+    <p class="vi_dhl">Date</p>
+    <p class="vi_details">01.03 - 20.03</p>
+    <br>
+    <p class="vi_dhl">Hour</p>
+    <p class="vi_details">09:00 - 18:00, every day</p>
+    <br>
+    <p class="vi_dhl">Location</p>
+    <p class="vi_details">Moldova Art Museum, 31 August 1989 St 115</p>
   </div>
   <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2719.8988663877167!2d28.82555657678881!3d47.02259012812301!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40c97c32fb3fffb9%3A0xef05ec70a96217f8!2sNational%20History%20Museum%20of%20Moldova!5e0!3m2!1sen!2s!4v1708866827379!5m2!1sen!2s" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
   <h4>
@@ -215,6 +235,22 @@
       <button class="ticket_button2">Buy Ticket</button>
       </div>
     </div>
+  </div>
+</section>
+
+<section class="download_app">
+  <h2>Download the App</h2>
+  <h4>
+    Get the best experience exploring art and artists at our museum with our brand new 
+    app. Now available for both IOS and Android! 
+  </h4>
+  <div class="download_buttons">
+    <img src="images/app store button.svg" alt="App Store Button"/>
+    <img src="images/playstore button.png" alt="Play Store Button"/>
+  </div>
+  <div class="mascot_and_phone">
+    <img src="images/mascot smiling.png" alt="Mascot Smiling"/>
+    <img src="images/Phone app.png" alt="App Mockup"/>
   </div>
 </section>
 

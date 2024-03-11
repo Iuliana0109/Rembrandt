@@ -1,18 +1,5 @@
 // NAVBAR STUFF
-window.addEventListener('scroll', function() {
-  var navbar = document.querySelector('.navbar');
-  var hero = document.querySelector('.hero');
-  var heroHeight = hero.offsetHeight;
-  var scrollPosition = window.scrollY + (window.innerHeight / 2)+180; // Scroll position at the center of the viewport
-  var heroTop = hero.offsetTop;
-  var heroBottom = heroTop + heroHeight;
 
-  if (scrollPosition > heroBottom || scrollPosition < heroTop) {
-    navbar.style.backgroundColor = '#120602'; // Transparent background when outside the hero section
-  } else {
-    navbar.style.backgroundColor = 'transparent'; // Change to desired background color when inside the hero section
-  }
-});
 
 document.addEventListener("DOMContentLoaded", function() {
   var navLinks = document.querySelectorAll('nav a');
@@ -34,58 +21,62 @@ document.addEventListener("DOMContentLoaded", function() {
   });
 });
 
+document.querySelector('.menu-icon').addEventListener('click', function() {
+  document.querySelector('.navbar').classList.toggle('menu-open');
+});
+
 
 // CAROUSEL
-const track = document.querySelector('.carousel');
-const items = document.querySelectorAll('.card');
-const dots = document.querySelectorAll('.dot');
+// const track = document.querySelector('.carousel');
+// const items = document.querySelectorAll('.card');
+// const dots = document.querySelectorAll('.dot');
 
-let index = 0;
-let isTransitioning = false;
+// let index = 0;
+// let isTransitioning = false;
 
-function updateCarousel() {
-  track.style.transition = isTransitioning ? 'transform 0.5s ease' : 'none';
-  track.style.transform = `translateX(-${index * 33}%)`;
-  dots.forEach((dot, i) => {
-    dot.classList.toggle('active', i === index % items.length);
-  });
-}
+// function updateCarousel() {
+//   track.style.transition = isTransitioning ? 'transform 0.5s ease' : 'none';
+//   track.style.transform = `translateX(-${index * 33}%)`;
+//   dots.forEach((dot, i) => {
+//     dot.classList.toggle('active', i === index % items.length);
+//   });
+// }
 
-function nextSlide() {
-  if (!isTransitioning) {
-    isTransitioning = true;
-    const nextIndex = (index + 1) % items.length;
-    if (nextIndex === 0) {
-      // If transitioning from last slide to first slide, skip the transition
-      track.style.transition = 'none';
-      track.style.transform = 'translateX(0)';
-      setTimeout(() => {
-        isTransitioning = false;
-        track.style.transition = 'transform 0.5s ease'; // Restore transition for next slide
-        index = nextIndex;
-        updateCarousel();
-      }, 50);
-    } else {
-      track.style.transition = 'transform 0.5s ease';
-      index = nextIndex;
-      updateCarousel();
-      setTimeout(() => {
-        isTransitioning = false;
-      }, 500);
-    }
-  }
-}
-function prevSlide() {
-  if (!isTransitioning) {
-    isTransitioning = true;
-    index = (index - 1 + items.length) % items.length;
-    updateCarousel();
-    setTimeout(() => {
-      isTransitioning = false;
-    }, 500);
-  }
-}
+// function nextSlide() {
+//   if (!isTransitioning) {
+//     isTransitioning = true;
+//     const nextIndex = (index + 1) % items.length;
+//     if (nextIndex === 0) {
+//       // If transitioning from last slide to first slide, skip the transition
+//       track.style.transition = 'none';
+//       track.style.transform = 'translateX(0)';
+//       setTimeout(() => {
+//         isTransitioning = false;
+//         track.style.transition = 'transform 0.5s ease'; // Restore transition for next slide
+//         index = nextIndex;
+//         updateCarousel();
+//       }, 50);
+//     } else {
+//       track.style.transition = 'transform 0.5s ease';
+//       index = nextIndex;
+//       updateCarousel();
+//       setTimeout(() => {
+//         isTransitioning = false;
+//       }, 500);
+//     }
+//   }
+// }
+// function prevSlide() {
+//   if (!isTransitioning) {
+//     isTransitioning = true;
+//     index = (index - 1 + items.length) % items.length;
+//     updateCarousel();
+//     setTimeout(() => {
+//       isTransitioning = false;
+//     }, 500);
+//   }
+// }
 
-setInterval(nextSlide, 3000); // Auto-scroll every 3 seconds
+// setInterval(nextSlide, 3000); // Auto-scroll every 3 seconds
 
 
