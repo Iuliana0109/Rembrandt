@@ -10,7 +10,11 @@ This project is a landing page for an exhibition featuring the works of the reno
 5. **Statistics**: Section displaying statistics or key information about the exhibition.
 6. **Visitor Information**: Details about dates, hours, and location of the exhibition.
 7. **Choose Your Ticket**: Information about ticket options and how to purchase them.
-8. **Footer**: Footer section with additional links or information.
+8. **Download the app:** Call to action for users to download the museum's app. AVAILABLE ONLY FOR MOBILE VERSION!
+9. **Footer**: Footer section with additional links or information.
+
+## Mascot
+When opening the page, there is a mascot representing a miniature cartoon version of Rembrandt himself that waves to the users and invites them to the exhibition.
 
 ## Technologies Used
 - HTML
