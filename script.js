@@ -79,4 +79,11 @@ document.querySelector('.menu-icon').addEventListener('click', function() {
 
 // setInterval(nextSlide, 3000); // Auto-scroll every 3 seconds
 
+// MASCOT HANDLING
+document.addEventListener("DOMContentLoaded", function() {
+  setTimeout(function() {
+    document.getElementById("mascot-container").classList.add("show-mascot");
+  }, 5000); // Delay in milliseconds (2 seconds in this example)
+});
+
 
