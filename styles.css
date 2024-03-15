@@ -1,4 +1,5 @@
 /* Navbar styles */
+@tailwind base;
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 
 body{
@@ -1223,3 +1224,9 @@ footer .info_text {
   width: 80%;
 }
 } 
+
+/* Import Tailwind CSS Components */
+@tailwind components;
+
+/* Import Tailwind CSS Utilities */
+@tailwind utilities;

@@ -11,34 +11,34 @@
 
 <body>
 
-  <header class="hero" id="hero">
+  <header class="hero bg-cover bg-center bg-hero-image">
     <div class="wrapper">
-      <nav class="navbar">
-        <div class="mobile_menu">
-        <div class="logo">
-            <a href="#hero"><img src="images/logo.png" alt="logo"></a>
-        </div>
-        <div class="menu-icon">
-          <img src="images/hamburger_menu.svg" alt="hamburger_menu">
-        </div>
-        </div>
-        <ul class="nav-links">
-          <li><a href="#about">About Rembrandt</a></li>
-          <li><a href="#featured">Featured Works</a></li>
-          <li><a href="#visitor">Visitor Information</a></li>
-          <li><a href="#tickets">Tickets</a></li>
-        </ul>
-      </nav>  
+        <nav class="navbar flex justify-between items-center">
+            <div class="mobile_menu flex items-center">
+                <div class="logo">
+                    <a href="#hero"><img src="images/logo.png" alt="logo"></a>
+                </div>
+                <div class="menu-icon">
+                    <img src="images/hamburger_menu.svg" alt="hamburger_menu">
+                </div>
+            </div>
+            <ul class="nav-links flex">
+                <li><a href="#about" class="text-white">About Rembrandt</a></li>
+                <li><a href="#featured" class="text-white">Featured Works</a></li>
+                <li><a href="#visitor" class="text-white">Visitor Information</a></li>
+                <li><a href="#tickets" class="text-white">Tickets</a></li>
+            </ul>
+        </nav>
     </div>
-  
-    <div class="hero_text">
-      <h3 class="header_h3">March 01 - March 20</h3>
-      <h1 class="h1_part1">Rembrandt:</h1>
-      <h1 class="h1_part2">Master of Light and Shadow</h1>
-      <h3 class="header_h3">Experience the Genius of Rembrandt at an exclusive exhibition</h3>
-      <a href="#tickets"><button class="hero_button">Buy Tickets</button></a>
+
+    <div class="hero_text flex flex-col items-center justify-end">
+        <h3 class="header_h3 text-white">March 01 - March 20</h3>
+        <h1 class="h1_part1 text-white">Rembrandt:</h1>
+        <h1 class="h1_part2 text-white">Master of Light and Shadow</h1>
+        <h3 class="header_h3 text-white">Experience the Genius of Rembrandt at an exclusive exhibition</h3>
+        <a href="#tickets" class="hero_button flex items-center justify-center px-8 py-4 rounded border-2 border-yellow-500 text-yellow-500 hover:bg-yellow-500 hover:text-white">Buy Tickets</a>
     </div>
-  </header>
+</header>
   
   <section class="about" id="about">
     <div class="title_and_part1">
@@ -86,54 +86,6 @@
       <img class="rembrandt_cutout" src="images/rembrandt_cutout.png" alt="rembrandt_cutout">
     </div>
   </section>
-
-
-<!-- <section class="about" id="about">
-  <div class="title_and_part1">
-    <h2>About Rembrandt</h2>
-    <div class="info_part">
-      <h4 class="h4_left">
-        Renowned for his unparalleled mastery of light, shadow, and emotion, 
-        Rembrandt van Rijn is one of the most revered painters in art history. 
-        Born in 1606 in Leiden, Netherlands, Rembrandt's artistic journey took 
-        him through triumph and tragedy, shaping his unique style and vision.
-      </h4>
-      <img src="images/rembrandt1.png" alt="rembrandt1">
-    </div>
-  </div>
-
-  <div class="info_part">
-    <div class="right">
-    <img src="images/rembrandt2.png" alt="rembrandt2">
-    <h4 class="h4_right">
-      Rembrandt's artistry is characterized by his ability to capture the human 
-      experience with unparalleled depth and sensitivity. From intimate 
-      portraits to grand historical scenes, each of his works tells a story, inviting 
-      viewers to immerse themselves in the narrative.
-    </h4>
-    </div>
-  </div>
-
-  <div class="info_part">
-    <h4 class="h4_left">
-      Despite facing personal hardships and financial struggles, Rembrandt's 
-      artistic legacy endures, inspiring generations of artists and art 
-      enthusiasts. His innovative use of light and shadow, known as 
-      chiaroscuro, revolutionized the art world and continues to captivate 
-      audiences today.
-    </h4>
-    <img src="images/rembrandt3.png" alt="rembrandt3">
-  </div>
-
-  <div class="info_part">
-    <h4 class="h4_right">
-      Join us on a journey through the life and work of Rembrandt van 
-      Rijn. Explore his masterpieces, uncover the stories behind the 
-      paintings, and immerse yourself in the world of this legendary artist.
-    </h4>
-    <img class="rembrandt_cutout" src="images/rembrandt_cutout.png" alt="rembrandt_cutout">
-  </div>
-</section> -->
 
 <section class="featured" id="featured">
   <h2>Featured Works</h2>
