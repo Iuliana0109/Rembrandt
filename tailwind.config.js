@@ -1,12 +1,14 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  purge: [
-    // Paths to your template files...
-    './index.html'
-  ],
-  content: [],
   theme: {
-    extend: {},
+     extend: {
+       colors: {
+         gray: {
+           '50': '#f9fafb',
+           '100': '#f3f4f6',
+           '900': '#1a202c',
+         },
+       },
+     },
   },
-  plugins: [],
-}
+ };
